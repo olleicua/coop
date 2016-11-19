@@ -1,0 +1,12 @@
+%h2 Games
+
+= link_to 'new game', new_game_path
+
+- @games.each do |game|
+  %p
+    = game.describe
+    %br/
+    - if game.joinable?
+      = link_to 'join', game
+    - else
+      = link_to 'view', game

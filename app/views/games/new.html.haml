@@ -1,0 +1,6 @@
+%h2 New Game
+
+= form_for @game do |f|
+  = f.label :canvas_height, 'Canvas Size'
+  = f.number_field :canvas_height
+  = f.submit

@@ -1,0 +1,53 @@
+.palette {
+  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+.color {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+  cursor: pointer;
+}
+
+.game {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  height: 15px;
+}
+
+.pixel {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+
+.cursor {
+  display: none;
+  position: fixed;
+  cursor: none;
+  pointer-events: none;
+}
+
+.instructions {
+  margin-top: 1em;
+  text-align: center;
+}

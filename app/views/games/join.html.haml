@@ -1,0 +1,6 @@
+%h2= @game.describe
+
+- if @game.players.where(user_id: current_user.id).any?
+  %p Waiting for more players
+- else
+  %p= link_to 'join', [@game, :join], method: :patch

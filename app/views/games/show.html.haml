@@ -1,0 +1,13 @@
+.palette
+  - Game::COLORS.each do |color|
+    .color{style: "background-color: #{color};", data: {color: color}}
+
+.game{style: "width: #{@game.canvas_width * 15}px;", data: {updated: @game.updated_at.to_i, id: @game.id}}>
+  - @game.canvas_height.times do |row|
+    .row<>
+      - @game.canvas_width.times do |column|
+        - color = @game.get_pixel(row, column)
+        .pixel{style: "background-color: #{color};", data: {row: row, column: column, color: color}}<>
+  .cursor.color
+
+.instructions
